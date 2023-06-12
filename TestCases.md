@@ -1,4 +1,4 @@
-## This is the response by gpt44all when I did not train on any data. This is the response it got from its pre-trained context.
+## This is the response by gpt44all when we did not train on any data. This is the response it got from its pre-trained context.
 
 
 > Question:
@@ -37,4 +37,4 @@ else:
     print("Strings are different")
 ```
 
-Here, I was able to make an observation that this LLM was able to refer to all the files with string comparison code in them and then generate a result out of it. This response is not exactly same of any of the files.
+Here, we were able to make an observation that this LLM was able to refer to all the files with string comparison code in them and then generate a result out of it. This response is not exactly same of any of the files.
