@@ -21,7 +21,7 @@ print(has_same_reverse("hello"))  # Output: True
 You can call this function with any string you want, and it will return `True` or `False` depending on whether the string is the same as its reverse.
 
 
-## Now I trained the model on some code files and a file which checks whether a string is palindrome or not and asked the same query. Here is the response.
+## Now we trained the model on some code files and a file which checks whether a string is palindrome or not and asked the same query. Here is the response.
 
 > Question:
 write python code to check if a string and inverse of that string is same
@@ -40,7 +40,7 @@ else:
 Here, we were able to make an observation that this LLM was able to refer to all the files with string comparison code in them and then generate a result out of it. This response is not exactly same of any of the files.
 
 
-# Here is another another query: -
+# Here is another query: -
 > Question:
 write python code to implement threading
 
