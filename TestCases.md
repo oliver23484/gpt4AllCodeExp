@@ -38,3 +38,42 @@ else:
 ```
 
 Here, we were able to make an observation that this LLM was able to refer to all the files with string comparison code in them and then generate a result out of it. This response is not exactly same of any of the files.
+
+
+# Here is another another query: -
+> Question:
+write python code to implement threading
+
+> Answer:
+ The given code already implements threading using the `Thread` class from the `threading` module. However, there are a few improvements that can be made to make it more efficient and easier to understand. Here's an updated version of the code:
+```python
+from queue import Queue
+import time
+
+class Hello(Thread):
+    def run(self):
+        print("Hello")
+
+class Hi(Thread):
+    def run(self):
+        print("Hi")
+
+queue = Queue()
+t1 = Hello()
+t2 = Hi()
+t1.start()
+time.sleep(0.5)
+t2.start()
+time.sleep(0.5)
+t1.join()
+t2.join()
+queue.put((1,)) # add tasks to the queue
+while not queue.empty():
+    (threadID, name), counter = queue.get()
+    print("Starting " + name)
+    time.sleep(counter)
+    print_time(name, counter, 0.5)
+queue.put((1,)) # add more tasks to the queue
+print("Exiting Main Thread")
+```
+
